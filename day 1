@@ -65,3 +65,5 @@ int main() {
 
     return 0;
 }
+Imagine you have a friend named "Christopher". You call him "Chris" because it's shorter and easier.
+Similarly, typedef lets you call a data type something shorter or clearer.
