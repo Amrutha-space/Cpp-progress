@@ -67,3 +67,167 @@ int main() {
 }
 Imagine you have a friend named "Christopher". You call him "Chris" because it's shorter and easier.
 Similarly, typedef lets you call a data type something shorter or clearer.
+
+  #include <iostream>
+  #include <vector>
+  
+  typedef std::string text_t;
+
+  int main(){
+
+    text_t firstName = "Bro";
+
+    std::cout << firstName << '\n';
+
+    return 0;
+  }
+## keeping identifier as number code: typedef int number_t;   instead of typedef, we can also use using keyword 
+now instead of int we can number_t
+#include <iostream>
+  #include <vector>
+  using namespace std;
+  
+  typedef std::string text_t;
+  typedef int number_t;
+#using text_t = std::string;
+using number_t = int;
+  
+  int main(){
+
+    text_t firstName = "Bro";
+    number_t age = 21;
+  
+   cout << firstName << '\n';
+   cout << age << '\n';
+    return 0;
+  }
+###arithmatic operators --return the result of specific operation
+  #include <iostream>
+  using namespace std;
+  
+  int main(){
+ 
+    int students = 20;
+    students = students +1;
+    //students+=1;
+    //students++;
+    students = students -1;
+    //students--;
+    //students-= 1;
+    students = students * 2;
+
+    students = students /2;
+    students/=2;
+    
+    cout << students;
+
+
+    return 0;
+  }
+
+###typeconversion -which changes one data type to another data type 
+2 types implicit-automatic
+explicit-precede value with new datatype (int)
+  #include <iostream>
+  using namespace std;
+  
+  int main(){
+ 
+    int correct = 8;
+    int questions = 10;
+    double score = correct/(double)questions * 100;
+
+    cout << score ;
+    return 0;
+  }
+###
+  #include <iostream>
+  using namespace std;
+  
+  int main(){
+ 
+    string name;
+    cout << "what's your name?: ";
+    cin >> name ;
+
+    cout << "Hello " << name;
+ 
+
+    return 0;
+  }
+
+### math functions 
+
+  #include <iostream>
+  using namespace std;
+  
+  int main(){
+ 
+double a;
+double b;
+double c;
+ 
+ cout << "Enter side A: ";
+ cin >> a;
+
+ cout << "Enter size B: ";
+ cin >> b;
+
+ a = pow(a, 2);
+ b = pow(b, 2);
+ c = sqrt(a+b);
+
+ cout << "side C: " << c;
+    return 0;
+  }
+
+### if statements -do something if a condition is true if not then don't 
+
+
+
+  #include <iostream>
+  using namespace std;
+  
+  int main(){
+ 
+int age ;
+cout << "enter age : ";
+cin >> age;
+if(age >= 18){
+    cout << "welcome to site !!";
+}
+ else if (age < 0){
+    cout << "not born";
+}
+    else {
+        cout << "not enough";
+    }
+
+    return 0;
+}
+
+
+###switch
+when we don't want to repeat the value, we use this as a case 
+
+  #include <iostream>
+  using namespace std;
+  
+  int main(){
+ 
+    int month;  (char grade)
+    cout << "enter month";
+    cin >> month;
+
+    switch(month){
+        case 1:
+        cout << "jan";
+        break;
+        case 2:
+        cout << "feb";
+        break; 
+    }
+    return 0;
+}
+
+
